@@ -7,7 +7,7 @@ export async function onBoard() {
     const clerkUser = await currentUser();
 
     if (!clerkUser) {
-        throw new Error("Unauthorized");
+        throw new Error("Unauthorized User");
     }
 
     const email =
